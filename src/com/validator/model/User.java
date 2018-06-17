@@ -8,6 +8,7 @@ public class User {
 	private String name;
 	private String address;
 	private String email;
+	private byte[] photo;
 	
 	@NotEmpty(message="名字: 請勿空白")
 	@Size(min=2,max=6,message="名字: 長度必需在{min}到{max}之間")
@@ -32,6 +33,14 @@ public class User {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	@NotEmpty(message="圖片: 請勿空白")
+	public byte[] getPhoto() {
+		return photo;
+	}
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
 	}
 	
 	

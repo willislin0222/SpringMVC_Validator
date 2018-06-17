@@ -18,7 +18,10 @@
                <form:input type="text" path="address" /><br>
                 <label for="email">信箱</label>
                <form:input type="text" path="email" /><br>
+                <label for="email">照片</label>
+               <form:input type="file" path="photo" /><br>
                <input type="submit" value="送出">
+               
             </form:form>
 <%--             </form> --%>
 </body>
